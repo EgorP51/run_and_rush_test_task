@@ -17,6 +17,4 @@ class UserSneakerModel with _$UserSneakerModel {
 
   factory UserSneakerModel.fromJson(Map<String, dynamic> json) =>
       _$UserSneakerModelFromJson(json);
-
-  //Map<String, dynamic> toJson() => _$UserSneakerModelToJson(this);
 }

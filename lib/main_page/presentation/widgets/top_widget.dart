@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:run_and_rush_test_task/main_page/data/models/user_sneaker_model.dart';
 
 class TopWidget extends StatelessWidget {
-  const TopWidget({super.key, required this.userSneakerModel});
+  const TopWidget({required this.userSneakerModel, super.key});
 
   final UserSneakerModel userSneakerModel;
 

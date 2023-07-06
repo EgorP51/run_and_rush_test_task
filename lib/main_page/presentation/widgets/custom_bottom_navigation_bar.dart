@@ -26,53 +26,55 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
               colors: _gradientColors()),
         ),
         height: 50,
-        child:
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          IconButton(
-            onPressed: () {
-              setState(() {
-                selectedIndex = 3;
-              });
-            },
-            icon: SvgPicture.asset(
-              'asset/icons_svg/running_man.svg',
-              color: selectedIndex == 3 ? Colors.white : Colors.white70,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  selectedIndex = 3;
+                });
+              },
+              icon: SvgPicture.asset(
+                'asset/icons_svg/running_man.svg',
+                color: selectedIndex == 3 ? Colors.white : Colors.white70,
+              ),
             ),
-          ),
-          IconButton(
-            onPressed: () {
-              setState(() {
-                selectedIndex = 2;
-              });
-            },
-            icon: SvgPicture.asset(
-              'asset/icons_svg/sneaker.svg',
-              color: selectedIndex == 2 ? Colors.white : Colors.white70,
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  selectedIndex = 2;
+                });
+              },
+              icon: SvgPicture.asset(
+                'asset/icons_svg/sneaker.svg',
+                color: selectedIndex == 2 ? Colors.white : Colors.white70,
+              ),
             ),
-          ),
-          IconButton(
-            onPressed: () {
-              setState(() {
-                selectedIndex = 1;
-              });
-            },
-            icon: SvgPicture.asset(
-              'asset/icons_svg/stats.svg',
-              color: selectedIndex == 1 ? Colors.white : Colors.white70,
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  selectedIndex = 1;
+                });
+              },
+              icon: SvgPicture.asset(
+                'asset/icons_svg/stats.svg',
+                color: selectedIndex == 1 ? Colors.white : Colors.white70,
+              ),
             ),
-          ),
-          IconButton(
-            onPressed: () {
-              setState(() {
-                selectedIndex = 0;
-              });
-            },
-            icon: SvgPicture.asset(
-              'asset/icons_svg/bag.svg',
-              color: selectedIndex == 0 ? Colors.white : Colors.white70,
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  selectedIndex = 0;
+                });
+              },
+              icon: SvgPicture.asset(
+                'asset/icons_svg/bag.svg',
+                color: selectedIndex == 0 ? Colors.white : Colors.white70,
+              ),
             ),
-          ),
-        ]),
+          ],
+        ),
       ),
     );
   }

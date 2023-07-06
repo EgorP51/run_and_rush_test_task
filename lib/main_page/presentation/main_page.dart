@@ -12,6 +12,5 @@ class MainPage extends StatelessWidget {
       create: (context) => MainPageCubit()..loadInitialData(),
       child: const MainWidget(),
     );
-
   }
 }

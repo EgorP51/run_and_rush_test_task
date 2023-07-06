@@ -55,7 +55,7 @@ class MainPageBody extends StatelessWidget {
           StepCountWidget(
             current: (userSneakerModel.stepsNumber ?? 0).toDouble() ,
             rightChild: Text(
-              '${(userSneakerModel.stepsNumber ?? 0) / 1000}k/50k',
+              '${((userSneakerModel.stepsNumber ?? 0) / 1000).toStringAsFixed(1)}k/50k',
               style: const TextStyle(
                 color: Colors.white,
               ),

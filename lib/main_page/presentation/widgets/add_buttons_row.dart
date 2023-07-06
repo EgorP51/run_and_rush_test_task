@@ -14,7 +14,7 @@ class AddButtonsRow extends StatelessWidget {
 }
 
 class _Item extends StatelessWidget {
-  const _Item({Key? key}) : super(key: key);
+  const _Item({super.key});
 
   @override
   Widget build(BuildContext context) {
