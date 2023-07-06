@@ -20,12 +20,13 @@ UserSneakerModel _$UserSneakerModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$UserSneakerModel {
-  String get email => throw _privateConstructorUsedError;
-  String get sneakerImg => throw _privateConstructorUsedError;
-  String get sneakerModel => throw _privateConstructorUsedError;
-  int get sneakerId => throw _privateConstructorUsedError;
-  int get stepsNumber => throw _privateConstructorUsedError;
-  int get energyPoints => throw _privateConstructorUsedError;
+  String? get email => throw _privateConstructorUsedError;
+  String? get userImg => throw _privateConstructorUsedError;
+  String? get sneakerImg => throw _privateConstructorUsedError;
+  String? get sneakerModel => throw _privateConstructorUsedError;
+  int? get sneakerId => throw _privateConstructorUsedError;
+  int? get stepsNumber => throw _privateConstructorUsedError;
+  int? get energyPoints => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -40,12 +41,13 @@ abstract class $UserSneakerModelCopyWith<$Res> {
       _$UserSneakerModelCopyWithImpl<$Res, UserSneakerModel>;
   @useResult
   $Res call(
-      {String email,
-      String sneakerImg,
-      String sneakerModel,
-      int sneakerId,
-      int stepsNumber,
-      int energyPoints});
+      {String? email,
+      String? userImg,
+      String? sneakerImg,
+      String? sneakerModel,
+      int? sneakerId,
+      int? stepsNumber,
+      int? energyPoints});
 }
 
 /// @nodoc
@@ -61,38 +63,43 @@ class _$UserSneakerModelCopyWithImpl<$Res, $Val extends UserSneakerModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = null,
-    Object? sneakerImg = null,
-    Object? sneakerModel = null,
-    Object? sneakerId = null,
-    Object? stepsNumber = null,
-    Object? energyPoints = null,
+    Object? email = freezed,
+    Object? userImg = freezed,
+    Object? sneakerImg = freezed,
+    Object? sneakerModel = freezed,
+    Object? sneakerId = freezed,
+    Object? stepsNumber = freezed,
+    Object? energyPoints = freezed,
   }) {
     return _then(_value.copyWith(
-      email: null == email
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      sneakerImg: null == sneakerImg
+              as String?,
+      userImg: freezed == userImg
+          ? _value.userImg
+          : userImg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      sneakerImg: freezed == sneakerImg
           ? _value.sneakerImg
           : sneakerImg // ignore: cast_nullable_to_non_nullable
-              as String,
-      sneakerModel: null == sneakerModel
+              as String?,
+      sneakerModel: freezed == sneakerModel
           ? _value.sneakerModel
           : sneakerModel // ignore: cast_nullable_to_non_nullable
-              as String,
-      sneakerId: null == sneakerId
+              as String?,
+      sneakerId: freezed == sneakerId
           ? _value.sneakerId
           : sneakerId // ignore: cast_nullable_to_non_nullable
-              as int,
-      stepsNumber: null == stepsNumber
+              as int?,
+      stepsNumber: freezed == stepsNumber
           ? _value.stepsNumber
           : stepsNumber // ignore: cast_nullable_to_non_nullable
-              as int,
-      energyPoints: null == energyPoints
+              as int?,
+      energyPoints: freezed == energyPoints
           ? _value.energyPoints
           : energyPoints // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ) as $Val);
   }
 }
@@ -106,12 +113,13 @@ abstract class _$$_UserSneakerModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String email,
-      String sneakerImg,
-      String sneakerModel,
-      int sneakerId,
-      int stepsNumber,
-      int energyPoints});
+      {String? email,
+      String? userImg,
+      String? sneakerImg,
+      String? sneakerModel,
+      int? sneakerId,
+      int? stepsNumber,
+      int? energyPoints});
 }
 
 /// @nodoc
@@ -125,38 +133,43 @@ class __$$_UserSneakerModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = null,
-    Object? sneakerImg = null,
-    Object? sneakerModel = null,
-    Object? sneakerId = null,
-    Object? stepsNumber = null,
-    Object? energyPoints = null,
+    Object? email = freezed,
+    Object? userImg = freezed,
+    Object? sneakerImg = freezed,
+    Object? sneakerModel = freezed,
+    Object? sneakerId = freezed,
+    Object? stepsNumber = freezed,
+    Object? energyPoints = freezed,
   }) {
     return _then(_$_UserSneakerModel(
-      email: null == email
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      sneakerImg: null == sneakerImg
+              as String?,
+      userImg: freezed == userImg
+          ? _value.userImg
+          : userImg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      sneakerImg: freezed == sneakerImg
           ? _value.sneakerImg
           : sneakerImg // ignore: cast_nullable_to_non_nullable
-              as String,
-      sneakerModel: null == sneakerModel
+              as String?,
+      sneakerModel: freezed == sneakerModel
           ? _value.sneakerModel
           : sneakerModel // ignore: cast_nullable_to_non_nullable
-              as String,
-      sneakerId: null == sneakerId
+              as String?,
+      sneakerId: freezed == sneakerId
           ? _value.sneakerId
           : sneakerId // ignore: cast_nullable_to_non_nullable
-              as int,
-      stepsNumber: null == stepsNumber
+              as int?,
+      stepsNumber: freezed == stepsNumber
           ? _value.stepsNumber
           : stepsNumber // ignore: cast_nullable_to_non_nullable
-              as int,
-      energyPoints: null == energyPoints
+              as int?,
+      energyPoints: freezed == energyPoints
           ? _value.energyPoints
           : energyPoints // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -166,6 +179,7 @@ class __$$_UserSneakerModelCopyWithImpl<$Res>
 class _$_UserSneakerModel implements _UserSneakerModel {
   const _$_UserSneakerModel(
       {required this.email,
+      required this.userImg,
       required this.sneakerImg,
       required this.sneakerModel,
       required this.sneakerId,
@@ -176,21 +190,23 @@ class _$_UserSneakerModel implements _UserSneakerModel {
       _$$_UserSneakerModelFromJson(json);
 
   @override
-  final String email;
+  final String? email;
   @override
-  final String sneakerImg;
+  final String? userImg;
   @override
-  final String sneakerModel;
+  final String? sneakerImg;
   @override
-  final int sneakerId;
+  final String? sneakerModel;
   @override
-  final int stepsNumber;
+  final int? sneakerId;
   @override
-  final int energyPoints;
+  final int? stepsNumber;
+  @override
+  final int? energyPoints;
 
   @override
   String toString() {
-    return 'UserSneakerModel(email: $email, sneakerImg: $sneakerImg, sneakerModel: $sneakerModel, sneakerId: $sneakerId, stepsNumber: $stepsNumber, energyPoints: $energyPoints)';
+    return 'UserSneakerModel(email: $email, userImg: $userImg, sneakerImg: $sneakerImg, sneakerModel: $sneakerModel, sneakerId: $sneakerId, stepsNumber: $stepsNumber, energyPoints: $energyPoints)';
   }
 
   @override
@@ -199,6 +215,7 @@ class _$_UserSneakerModel implements _UserSneakerModel {
         (other.runtimeType == runtimeType &&
             other is _$_UserSneakerModel &&
             (identical(other.email, email) || other.email == email) &&
+            (identical(other.userImg, userImg) || other.userImg == userImg) &&
             (identical(other.sneakerImg, sneakerImg) ||
                 other.sneakerImg == sneakerImg) &&
             (identical(other.sneakerModel, sneakerModel) ||
@@ -213,8 +230,8 @@ class _$_UserSneakerModel implements _UserSneakerModel {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, email, sneakerImg, sneakerModel,
-      sneakerId, stepsNumber, energyPoints);
+  int get hashCode => Object.hash(runtimeType, email, userImg, sneakerImg,
+      sneakerModel, sneakerId, stepsNumber, energyPoints);
 
   @JsonKey(ignore: true)
   @override
@@ -232,28 +249,31 @@ class _$_UserSneakerModel implements _UserSneakerModel {
 
 abstract class _UserSneakerModel implements UserSneakerModel {
   const factory _UserSneakerModel(
-      {required final String email,
-      required final String sneakerImg,
-      required final String sneakerModel,
-      required final int sneakerId,
-      required final int stepsNumber,
-      required final int energyPoints}) = _$_UserSneakerModel;
+      {required final String? email,
+      required final String? userImg,
+      required final String? sneakerImg,
+      required final String? sneakerModel,
+      required final int? sneakerId,
+      required final int? stepsNumber,
+      required final int? energyPoints}) = _$_UserSneakerModel;
 
   factory _UserSneakerModel.fromJson(Map<String, dynamic> json) =
       _$_UserSneakerModel.fromJson;
 
   @override
-  String get email;
+  String? get email;
   @override
-  String get sneakerImg;
+  String? get userImg;
   @override
-  String get sneakerModel;
+  String? get sneakerImg;
   @override
-  int get sneakerId;
+  String? get sneakerModel;
   @override
-  int get stepsNumber;
+  int? get sneakerId;
   @override
-  int get energyPoints;
+  int? get stepsNumber;
+  @override
+  int? get energyPoints;
   @override
   @JsonKey(ignore: true)
   _$$_UserSneakerModelCopyWith<_$_UserSneakerModel> get copyWith =>

@@ -8,17 +8,19 @@ part of 'user_sneaker_model.dart';
 
 _$_UserSneakerModel _$$_UserSneakerModelFromJson(Map<String, dynamic> json) =>
     _$_UserSneakerModel(
-      email: json['email'] as String,
-      sneakerImg: json['sneakerImg'] as String,
-      sneakerModel: json['sneakerModel'] as String,
-      sneakerId: json['sneakerId'] as int,
-      stepsNumber: json['stepsNumber'] as int,
-      energyPoints: json['energyPoints'] as int,
+      email: json['email'] as String?,
+      userImg: json['userImg'] as String?,
+      sneakerImg: json['sneakerImg'] as String?,
+      sneakerModel: json['sneakerModel'] as String?,
+      sneakerId: json['sneakerId'] as int?,
+      stepsNumber: json['stepsNumber'] as int?,
+      energyPoints: json['energyPoints'] as int?,
     );
 
 Map<String, dynamic> _$$_UserSneakerModelToJson(_$_UserSneakerModel instance) =>
     <String, dynamic>{
       'email': instance.email,
+      'userImg': instance.userImg,
       'sneakerImg': instance.sneakerImg,
       'sneakerModel': instance.sneakerModel,
       'sneakerId': instance.sneakerId,

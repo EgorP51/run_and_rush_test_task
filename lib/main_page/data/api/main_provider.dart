@@ -5,15 +5,16 @@ class MainProvider {
   Future<UserSneakerModel> fetchModel() async {
 
     return await Future.delayed(
-      const Duration(seconds: 2),
+      const Duration(seconds: 3),
       () {
         return const UserSneakerModel(
-          email: 'email@gmail.com',
+          email: 'null@gmail.com',
+          userImg: 'https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png',
           sneakerImg: 'https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png',
-          sneakerModel: 'Jogger',
+          sneakerModel:'Jogger',
           sneakerId: 145265874,
-          stepsNumber: 24000,
-          energyPoints: 8,
+          stepsNumber: 25796,
+          energyPoints: 12,
         );
       },
     );
